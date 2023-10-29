@@ -109,7 +109,7 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
-                srcSet="/Homepage-Model-3-Mobile-NA.jpg 599w, /Homepage-Model-3-Desktop-NA.jpg 600w"
+                // srcSet="/Homepage-Model-3-Mobile-NA.jpg 599w, /Homepage-Model-3-Desktop-NA.jpg 600w"
                 sizes="(max-width: 599px) 400px, (max-width: 959px) 800px, 1200px"
               />
             </div>
@@ -125,7 +125,7 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              srcSet="/Homepage-Model-X-Mobile-LHD.jpg 599w, /Homepage-Model-X-Desktop-LHD.jpg 600w"
+              // srcSet="/Homepage-Model-X-Mobile-LHD.jpg 599w, /Homepage-Model-X-Desktop-LHD.jpg 600w"
               sizes="(max-width: 599px) 400px, (max-width: 959px) 800px, 1200px"
             />
           </div>
@@ -140,7 +140,7 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              srcSet="/Homepage-Model-S-Mobile-LHD-6.22.jpg 599w, /Homepage-Model-S-Desktop-LHD-6.22.jpg 600w"
+              // srcSet="/Homepage-Model-S-Mobile-LHD-6.22.jpg 599w, /Homepage-Model-S-Desktop-LHD-6.22.jpg 600w"
               sizes="(max-width: 599px) 400px, (max-width: 959px) 800px, 1200px"
             />
           </div>
@@ -184,7 +184,7 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              srcSet="/Homepage-SolarPanels-Mobile.jpg 599w, /425_HP_SolarPanels_D.jpg 600w"
+              // srcSet="/Homepage-SolarPanels-Mobile.jpg 599w, /425_HP_SolarPanels_D.jpg 600w"
               sizes="(max-width: 599px) 400px, (max-width: 959px) 800px, 1200px"
             />
           </div>
@@ -199,7 +199,7 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              srcSet="/Homepage-SolarRoof-Mobile-Global.jpg 599w, /Homepage-SolarRoof-Desktop-Global.jpg 600w"
+              // srcSet="/Homepage-SolarRoof-Mobile-Global.jpg 599w, /Homepage-SolarRoof-Desktop-Global.jpg 600w"
               sizes="(max-width: 599px) 400px, (max-width: 959px) 800px, 1200px"
             />
           </div>
@@ -214,7 +214,7 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              srcSet="/Homepage-Powerwall-Mobile.jpg 599w, /Homepage-Powerwall-Desktop.jpg 600w"
+              // srcSet="/Homepage-Powerwall-Mobile.jpg 599w, /Homepage-Powerwall-Desktop.jpg 600w"
               sizes="(max-width: 599px) 400px, (max-width: 959px) 800px, 1200px"
             />
           </div>
@@ -229,7 +229,7 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              srcSet="/Homepage-Accessories-Mobile-NA-APAC.jpg 599w, /Homepage-Accessories-Desktop-NA-APAC.jpg 600w"
+              // srcSet="/Homepage-Accessories-Mobile-NA-APAC.jpg 599w, /Homepage-Accessories-Desktop-NA-APAC.jpg 600w"
               sizes="(max-width: 599px) 400px, (max-width: 959px) 800px, 1200px"
             />
           </div>
