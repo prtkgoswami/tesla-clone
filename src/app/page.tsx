@@ -9,32 +9,14 @@ export default function Home() {
   const containerRef = useRef(null);
   const [showOverlay, setShowOverlay] = useState(false);
   const [visibleDivIndex, setVisibleDivIndex] = useState(0);
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-
-  const isElementInViewport = (el) => {
-    const rect = el.getBoundingClientRect();
-    console.log(
-      rect,
-      window.innerHeight,
-      document.documentElement.clientHeight,
-      window.innerWidth,
-      document.documentElement.clientWidth
-    );
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  };
+  // const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
     // Callback function to handle visibility changes
-    const handleIntersection = (entries) => {
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const index = entry.target.dataset.index;
+          const index = (entry.target as HTMLElement).dataset.index;
           // The observed element is in view
           setVisibleDivIndex(Number(index));
         }
@@ -52,10 +34,16 @@ export default function Home() {
     const observer = new IntersectionObserver(handleIntersection, options);
 
     // Select the elements you want to observe
-    const elements = containerRef.current.querySelectorAll(".tesla-sections");
+
+    let elements;
+    if (containerRef.current) {
+      elements = (containerRef.current as HTMLElement).querySelectorAll(
+        ".tesla-sections"
+      );
+    }
 
     // Start observing each element
-    elements.forEach((element) => {
+    elements?.forEach((element) => {
       observer.observe(element);
     });
 
