@@ -52,7 +52,7 @@ export default function Home() {
       observer.disconnect();
     };
   }, []); // Empty dependency array ensures this effect runs only once on component mount
-
+  // @ts-ignore
   return (
     <main className="flex min-h-screen flex-col overflow-hidden">
       <Banner />
